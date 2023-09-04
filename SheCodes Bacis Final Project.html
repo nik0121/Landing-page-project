@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes Project</title>
+    <style>
+      .final-project {
+        max-width: 500px;
+        display: block;
+        margin: 0 auto;
+        background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+        padding: 50px;
+        border-radius: 10px;
+      }
+      h1 {
+        text-align: center;
+        color: #ff7e67;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .social {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+      em {
+        font-weight: 700;
+      }
+      .introduction {
+        margin-top: 0;
+        line-height: 1.5;
+      }
+      img {
+        border-radius: 10px;
+      }
+      a {
+        text-decoration: none;
+        margin-top: 20px;
+        font-size: 14px;
+      }
+      button {
+        display: block;
+        margin: 40px auto;
+        padding: 20px 30px;
+        font-size: 16px;
+        cursor: pointer;
+        background: radial-gradient(
+          755px at 10.1% 95.3%,
+          rgb(242, 188, 141) 0%,
+          rgb(242, 159, 141) 100.2%
+        );
+        border-radius: 10px;
+        border: none;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: linear-gradient(
+          110.3deg,
+          rgb(238, 179, 123) 8.7%,
+          rgb(216, 103, 77) 47.5%,
+          rgb(114, 43, 54) 89.1%
+        );
+        color: white;
+      }
+    </style>
+  </head>
+  <div class="final-project">
+    <body>
+      <h1>Love for the Game</h1>
+      <h2>The Art of Volleyball</h2>
+
+      <p class="introduction">
+        My passion for volleyball as a player fueled by the sense of camaraderie
+        and teamwork it fosters. The thrill of setting up the perfect play, the
+        adrenaline rush when executing a powerful spike, and the satisfaction of
+        contributing to my team's success can all be significant factors in
+        igniting your passion for the sport. Additionally, the continuous
+        opportunity for personal growth, both physically and mentally, as I
+        strive to improve my skills and overcome challenges on the court, could
+        also contribute to my deep love for volleyball. As a volleyball player,
+        I love the sport because it allows me to showcase my athleticism and
+        agility. The feeling of soaring through the air to make that perfect
+        block or diving to save a ball just before it touches the ground can be
+        incredibly satisfying. Volleyball also provides a great sense of
+        achievement and improvement as I work hard to enhance my techniques,
+        positioning, and strategic thinking. Moreover, the social aspect of
+        volleyball can be a significant draw. The bonds formed with my
+        teammates, the shared goals, and the support I give and receive create a
+        tight-knit community that makes playing the sport even more enjoyable.
+      </p>
+      <div class="social">
+        Follow me on Instagram <span><em>@nica.volleyball </em></span>
+      </div>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/540/original/jannes-glas-0NaQQsLWLkA-unsplash.jpg?1690656398"
+        alt="spiking"
+        width="500"
+      />
+      <hr />
+      <p class="introduction">
+        <strong>Volleyball</strong> is a team sport in which two teams of six
+        players are separated by a net. Each team tries to score points by
+        grounding a ball on the other team's court under organized rules. It has
+        been a part of the official program of the Summer Olympic Games since
+        Tokyo 1964.
+      </p>
+
+      <a href="https://en.wikipedia.org/wiki/Volleyball" target="_blank"
+        >Learn more about Volleyball</a
+      >
+      <br />
+      <button>Enroll for Training</button>
+    </body>
+    <script>
+      function enrollTraining() {
+        let Name = prompt("What is your name?");
+        let age = prompt("What is your age?");
+        if (age > 12) {
+          alert("Hi " + Name + ", well keep in touch via email");
+        } else {
+          alert(
+            "Hi, " +
+              Name +
+              ". We're sorry, but you are currently outside the eligible age range. We'll give you option for other trainings under your age via email. "
+          );
+        }
+        let emailAddress = prompt("What is your email address?");
+      }
+      let pushButton = document.querySelector("button");
+      pushButton.addEventListener("click", enrollTraining);
+    </script>
+  </div>
+</html>
